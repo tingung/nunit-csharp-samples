@@ -2,4 +2,4 @@
 devfactory:
   version: 1
   excludes:
-        - 'money/**'
+        - 'money/MoneyTest.cs'
