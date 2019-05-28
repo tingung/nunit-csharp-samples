@@ -85,7 +85,6 @@
     <Compile Include="AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="IMoney.cs">
       <SubType>Code</SubType>
     </Compile>
