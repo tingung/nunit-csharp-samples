@@ -1,3 +1,5 @@
 #aLine specific config file 
 devfactory:
   version: 1
+  excludes:
+        - 'money/MoneyTest.cs'
