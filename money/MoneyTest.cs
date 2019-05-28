@@ -9,7 +9,8 @@ namespace NUnit.Samples.Money
 	[TestFixture]
 	public class MoneyTest 
 	{
-		private Money f12CHF;
+        public IntPtr publicPointer1;
+        private Money f12CHF;
 		private Money f14CHF;
 		private Money f7USD;
 		private Money f21USD;
