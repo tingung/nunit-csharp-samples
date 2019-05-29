@@ -1,8 +1,0 @@
-#aLine specific config file 
-devfactory:
-  version: 1
-  excludes:
-        - 'money/MoneyTest.cs'
-  coverage:
-      excludes:
-            - 'money/MoneyTest.cs'
