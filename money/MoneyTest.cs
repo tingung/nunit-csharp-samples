@@ -9,6 +9,7 @@ namespace NUnit.Samples.Money
 	[TestFixture]
 	public class MoneyTest
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2111:PointersShouldNotBeVisible")]
         public IntPtr publicPointer1;
         private Money f12CHF;
 		private Money f14CHF;
