@@ -1,7 +1,8 @@
 namespace NUnit.Samples.Money 
 {
 	using System;
-	using NUnit.Framework;
+    using System.Runtime.InteropServices;
+    using NUnit.Framework;
 	/// <summary>
 	/// Tests Money
 	/// </summary>
@@ -9,8 +10,10 @@ namespace NUnit.Samples.Money
 	[TestFixture]
 	public class MoneyTest
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2111:PointersShouldNotBeVisible")]
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2111:PointersShouldNotBeVisible")]
         public IntPtr publicPointer1;
+        [DllImport("kernel32.dll", CharSet = CharSet.Unicode)]
+        public static extern bool RemoveDirectory(string name);
         private Money f12CHF;
 		private Money f14CHF;
 		private Money f7USD;
