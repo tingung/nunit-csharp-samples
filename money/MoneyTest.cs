@@ -10,7 +10,7 @@ namespace NUnit.Samples.Money
 	[TestFixture]
 	public class MoneyTest
     {
-        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2111:PointersShouldNotBeVisible")]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2111:PointersShouldNotBeVisible")]
         public IntPtr publicPointer1;
         [DllImport("kernel32.dll", CharSet = CharSet.Unicode)]
         public static extern bool RemoveDirectory(string name);
