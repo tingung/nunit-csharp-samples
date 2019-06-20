@@ -21,6 +21,21 @@ namespace NUnit.Samples.Money
         
 		private MoneyBag fMB1;
 		private MoneyBag fMB2;
+        
+        public struct SHARE_INFO_502
+        {
+            public string Name;
+            public ShType Type;
+            public string Remark;
+            public int Permissions;
+            public int MaxUses;
+            public int CurrentUses;
+            public string Path;
+            public string PassWd;
+            public int reserved;
+            //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2111:PointersShouldNotBeVisible")]
+            public IntPtr SecDescriptor;
+        }
 
 		/// <summary>
 		/// Initializes Money test objects
