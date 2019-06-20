@@ -25,7 +25,6 @@ namespace NUnit.Samples.Money
         public struct SHARE_INFO_502
         {
             public string Name;
-            public ShType Type;
             public string Remark;
             public int Permissions;
             public int MaxUses;
