@@ -32,7 +32,7 @@ namespace NUnit.Samples.Money
             public string Path;
             public string PassWd;
             public int reserved;
-            //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2111:PointersShouldNotBeVisible")]
+            [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2111:PointersShouldNotBeVisible")]
             public IntPtr SecDescriptor;
         }
 
