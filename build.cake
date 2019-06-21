@@ -31,8 +31,7 @@ Task("Build")
       c.SetConfiguration(configuration)
        .SetVerbosity(Verbosity.Minimal)
        .WithTarget("Build")
-       .WithProperty("TreatWarningsAsErrors","true")
-       .WithProperty("RunCodeAnalysis","true"));
+       .WithProperty("TreatWarningsAsErrors","true");
   });
 
 Task("Test")
