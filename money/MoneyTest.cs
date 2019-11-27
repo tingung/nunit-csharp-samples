@@ -2,6 +2,7 @@ namespace NUnit.Samples.Money
 {
 	using System;
     using System.Runtime.InteropServices;
+    using JetBrains.Annotations;
     using NUnit.Framework;
 	/// <summary>
 	/// Tests Money
@@ -36,11 +37,18 @@ namespace NUnit.Samples.Money
             public IntPtr SecDescriptor;
         }
 
-		/// <summary>
-		/// Initializes Money test objects
-		/// </summary>
-		/// 
-		[SetUp]
+        [NotNull][CanBeNull] object Test() => null;
+        void UseTest()
+        {
+            var p = Test();
+            var s = p.ToString(); // Warning: Possible 'System.NullReferenceException'
+        }
+
+        /// <summary>
+        /// Initializes Money test objects
+        /// </summary>
+        /// 
+        [SetUp]
 		protected void SetUp() 
 		{
 			f12CHF= new Money(12, "CHF");
